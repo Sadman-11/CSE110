@@ -1,4 +1,4 @@
-# CSE110 - Computer Science & Engineering Lab Repository
+# CSE110 - Object Oriented Programming (OOP) Lab Repository
 
 This repository contains Java programming exercises and lab assignments from CSE110 course, focusing on fundamental programming concepts, primitive data types, arrays, and type casting.
 
