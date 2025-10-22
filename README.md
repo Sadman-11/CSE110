@@ -13,6 +13,11 @@ CSE110 is an introductory course covering fundamental programming concepts using
 - One-dimensional and multi-dimensional arrays
 - Ragged (jagged) arrays
 - Basic control structures
+- Object-oriented programming fundamentals
+- Classes and objects
+- Constructors (default and parameterized)
+- Methods and encapsulation
+- Object references and garbage collection
 
 ## 🗂️ Repository Structure
 
@@ -26,6 +31,17 @@ CSE110/
 │   ├── max_min.java               # Finding max and min values
 │   ├── ThreeXThree_Matrix.java    # 3x3 matrix input/output
 │   └── ragged_arrays_lab9.java    # Ragged array demonstration
+├── Introduction_to_Classes_LAB_4/
+│   ├── Lab4_p1.java               # Rectangle class with area calculation
+│   ├── Lab4_p2.java               # Circle class with setter method
+│   ├── Lab4_p3.java               # Object references demonstration
+│   ├── Lab4_p4.java               # Student class with default constructor
+│   ├── Lab4_p5.java               # Student class with parameterized constructor
+│   ├── Lab4_p6.java               # Rectangle with constructor
+│   ├── Lab4_p7.java               # Cube volume calculator
+│   ├── Lab4_p8.java               # Garbage collection and finalize
+│   ├── Lab4_p9.java               # Box volume with multiple objects
+│   └── Lab4_p11.java              # BankAccount class with methods
 └── package-info.java              # Package declaration
 ```
 
@@ -65,6 +81,60 @@ CSE110/
 - Array structure: [2, 3, 4] elements per row
 - **Concepts**: Ragged arrays, variable-length subarrays
 
+### Lab 4: Introduction to Classes
+
+#### 1. **Lab4_p1.java**
+- Implements Rectangle class with length, width attributes
+- Calculates area using a method
+- **Concepts**: Class definition, instance variables, methods, object creation
+
+#### 2. **Lab4_p2.java**
+- Circle class with radius attribute
+- Uses setter method and calculates area
+- Accepts user input for radius
+- **Concepts**: Setter methods, `this` keyword, Scanner integration
+
+#### 3. **Lab4_p3.java**
+- Demonstrates object reference assignment
+- Shows how two references can point to the same object
+- **Concepts**: Object references, reference assignment
+
+#### 4. **Lab4_p4.java**
+- Student class with id, name, and cgpa attributes
+- Uses default constructor to initialize values
+- **Concepts**: Default constructors, object initialization
+
+#### 5. **Lab4_p5.java**
+- Student class with parameterized constructor
+- Creates multiple student objects with different values
+- **Concepts**: Parameterized constructors, `this` keyword
+
+#### 6. **Lab4_p6.java**
+- Rectangle class with parameterized constructor
+- Demonstrates constructor-based initialization
+- **Concepts**: Constructor parameters, method invocation
+
+#### 7. **Lab4_p7.java**
+- Cube class to calculate volume
+- Single constructor accepting side length
+- **Concepts**: Constructor initialization, method implementation
+
+#### 8. **Lab4_p8.java**
+- Demonstrates garbage collection mechanism
+- Uses finalize() method to track object destruction
+- **Concepts**: Garbage collection, finalize method, System.gc()
+
+#### 9. **Lab4_p9.java**
+- Box class for volume calculation
+- Creates and manages multiple Box objects
+- **Concepts**: Multiple object creation, constructor usage
+
+#### 10. **Lab4_p11.java**
+- Complete BankAccount class implementation
+- Includes deposit, withdraw, and display methods
+- Handles insufficient balance scenarios
+- **Concepts**: Encapsulation, method implementation, conditional logic
+
 ## 🚀 Prerequisites
 
 - **Java Development Kit (JDK)**: Version 8 or higher
@@ -78,17 +148,21 @@ CSE110/
 Navigate to the project directory and compile any Java file:
 
 ```bash
-# Compile a single file
-javac primitive_types_Lab_3/primitive_types1.java
+# Compile a single Lab 3 file with proper package structure
+javac -d . primitive_types_Lab_3/primitive_types1.java
 
-# Or compile all files in the directory
-javac primitive_types_Lab_3/*.java
+# Or compile all Lab 3 files in the directory
+javac -d . primitive_types_Lab_3/*.java
+
+# Compile all Lab 4 files with proper package structure
+javac -d . Introduction_to_Classes_LAB_4/*.java
 ```
 
 ### Running a Program
 
 After compilation, run the program using the java command with the fully qualified class name:
 
+#### Lab 3 Programs:
 ```bash
 # Run primitive_types1
 java primitive_types.primitive_types1
@@ -112,8 +186,42 @@ java primitive_types.ragged_arrays_lab9
 java primitive_types.type_casting
 ```
 
+#### Lab 4 Programs:
+```bash
+# Run Rectangle area program
+java LAB.Lab4_p1
+
+# Run Circle area program (requires user input)
+java LAB.Lab4_p2
+
+# Run Box reference demonstration
+java LAB.Lab4_p3
+
+# Run Student with default constructor
+java LAB.Lab4_p4
+
+# Run Student with parameterized constructor
+java LAB.Lab4_p5
+
+# Run Rectangle with constructor
+java LAB.Lab4_p6
+
+# Run Cube volume calculator
+java LAB.Lab4_p7
+
+# Run garbage collection demo
+java LAB.Lab4_p8
+
+# Run Box volume with multiple objects
+java LAB.Lab4_p9
+
+# Run BankAccount class demo
+java LAB.Lab4_p11
+```
+
 ### Example Usage
 
+#### Lab 3 Example:
 ```bash
 # Example: Running input_calc
 $ java primitive_types.input_calc
@@ -124,10 +232,35 @@ Difference = 5.0
 Quotient = 2.0
 ```
 
+#### Lab 4 Example:
+```bash
+# Example: Running BankAccount program
+$ java LAB.Lab4_p11
+Account Number: 1
+Acount Holder: Shafkat
+Account Balance: 50000.0
+
+Depositing 18000
+Account Number: 1
+Acount Holder: Shafkat
+Account Balance: 68000.0
+
+Withdrawing 10000
+Account Number: 1
+Acount Holder: Shafkat
+Account Balance: 58000.0
+
+Insufficient Balance
+Account Number: 1
+Acount Holder: Shafkat
+Account Balance: 58000.0
+```
+
 ## 📖 Learning Outcomes
 
 By completing these exercises, students will:
 
+**Lab 3 - Primitive Types:**
 - ✅ Understand Java primitive data types (int, double)
 - ✅ Perform basic arithmetic operations
 - ✅ Handle user input using Scanner class
@@ -136,6 +269,17 @@ By completing these exercises, students will:
 - ✅ Understand and create ragged arrays
 - ✅ Use loops and conditional statements effectively
 - ✅ Practice proper code organization with packages
+
+**Lab 4 - Object-Oriented Programming:**
+- ✅ Define and create classes with attributes and methods
+- ✅ Understand object instantiation and usage
+- ✅ Implement default and parameterized constructors
+- ✅ Use the `this` keyword for referencing instance variables
+- ✅ Understand object references and memory management
+- ✅ Implement encapsulation with private data and public methods
+- ✅ Work with multiple objects of the same class
+- ✅ Understand garbage collection and finalize method
+- ✅ Create practical classes like BankAccount with business logic
 
 ## 🤝 Contributing
 
