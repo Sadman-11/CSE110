@@ -18,6 +18,12 @@ CSE110 is an introductory course covering fundamental programming concepts using
 - Constructors (default and parameterized)
 - Methods and encapsulation
 - Object references and garbage collection
+- Method overloading
+- Constructor overloading
+- Access modifiers (public, private, default)
+- Passing objects to methods
+- Returning objects from methods
+- Recursion
 
 ## 🗂️ Repository Structure
 
@@ -42,6 +48,20 @@ CSE110/
 │   ├── Lab4_p8.java               # Garbage collection and finalize
 │   ├── Lab4_p9.java               # Box volume with multiple objects
 │   └── Lab4_p11.java              # BankAccount class with methods
+├── Method_and_Classes_Lab_5/
+│   ├── MethodOverloadingDemo.java # Method overloading with different parameter types
+│   ├── MethodOverloadingDemo2.java # Method overloading demonstration
+│   ├── OverloadCons.java          # Constructor overloading demonstration
+│   ├── OverloadCons2.java         # Constructor overloading with copy constructor
+│   ├── AccessTest.java            # Access modifiers demonstration
+│   ├── PassObject.java            # Passing objects as parameters
+│   ├── PassObjRef.java            # Passing object references to methods
+│   ├── CallByValue.java           # Call by value demonstration
+│   ├── RetOb.java                 # Returning objects from methods
+│   ├── Recursion.java             # Factorial using recursion
+│   ├── Recursion2.java            # Array printing using recursion
+│   ├── TestStack.java             # Stack implementation (default access)
+│   └── TestStack2.java            # Stack implementation with private members
 └── package-info.java              # Package declaration
 ```
 
@@ -135,6 +155,73 @@ CSE110/
 - Handles insufficient balance scenarios
 - **Concepts**: Encapsulation, method implementation, conditional logic
 
+### Lab 5: Methods and Classes
+
+#### 1. **MethodOverloadingDemo.java**
+- Demonstrates method overloading with different parameter types
+- Overloads add() method for int and double parameters
+- **Concepts**: Method overloading, compile-time polymorphism
+
+#### 2. **MethodOverloadingDemo2.java**
+- Method overloading with automatic type promotion
+- Shows how Java selects appropriate overloaded method
+- **Concepts**: Method overloading, type promotion, method resolution
+
+#### 3. **OverloadCons.java**
+- Box class with three overloaded constructors
+- Default constructor, parameterized constructor, and cube constructor
+- **Concepts**: Constructor overloading, initialization options
+
+#### 4. **OverloadCons2.java**
+- Box class with copy constructor
+- Creates object copies using constructor
+- **Concepts**: Constructor overloading, copy constructor pattern
+
+#### 5. **AccessTest.java**
+- Demonstrates access modifiers (public, private, default)
+- Shows encapsulation with getter/setter methods
+- **Concepts**: Access control, encapsulation, data hiding
+
+#### 6. **PassObject.java**
+- Passes objects as parameters to methods
+- Compares objects using custom equalTo() method
+- **Concepts**: Object parameters, object comparison
+
+#### 7. **PassObjRef.java**
+- Demonstrates passing object references to methods
+- Shows how methods can modify object state
+- **Concepts**: Object references, pass-by-reference behavior
+
+#### 8. **CallByValue.java**
+- Demonstrates call by value in Java
+- Shows parameter passing mechanism
+- **Concepts**: Call by value, parameter passing
+
+#### 9. **RetOb.java**
+- Returns objects from methods
+- Creates and returns new objects
+- **Concepts**: Returning objects, object creation in methods
+
+#### 10. **Recursion.java**
+- Implements factorial calculation using recursion
+- Demonstrates recursive method calls
+- **Concepts**: Recursion, base case, recursive case
+
+#### 11. **Recursion2.java**
+- Prints array elements using recursion
+- Demonstrates recursive array traversal
+- **Concepts**: Recursion, array processing
+
+#### 12. **TestStack.java**
+- Stack data structure implementation
+- Push and pop operations with default access
+- **Concepts**: Data structures, stack operations, LIFO
+
+#### 13. **TestStack2.java**
+- Stack implementation with private members
+- Demonstrates proper encapsulation
+- **Concepts**: Encapsulation, private access, data hiding
+
 ## 🚀 Prerequisites
 
 - **Java Development Kit (JDK)**: Version 8 or higher
@@ -219,6 +306,48 @@ java LAB.Lab4_p9
 java LAB.Lab4_p11
 ```
 
+#### Lab 5 Programs:
+```bash
+# Run method overloading demo
+java lab5.MethodOverloadingDemo
+
+# Run method overloading demo 2
+java lab5.MethodOverloadingDemo2
+
+# Run constructor overloading demo
+java lab5.OverloadCons
+
+# Run constructor overloading with copy constructor
+java lab5.OverloadCons2
+
+# Run access modifiers demonstration
+java AccessTest
+
+# Run passing objects demo
+java lab5.PassObject
+
+# Run passing object references demo
+java PassObjRef
+
+# Run call by value demo
+java lab5.CallByValue
+
+# Run returning objects demo
+java RetOb
+
+# Run recursion factorial demo
+java Recursion
+
+# Run recursion array printing demo
+java Recursion2
+
+# Run stack implementation (default access)
+java TestStack
+
+# Run stack implementation (private members)
+java TestStack2
+```
+
 ### Example Usage
 
 #### Lab 3 Example:
@@ -256,6 +385,40 @@ Acount Holder: Shafkat
 Account Balance: 58000.0
 ```
 
+#### Lab 5 Example:
+```bash
+# Example: Running Recursion program
+$ java Recursion
+Factorial of 3 is 6
+Factorial of 4 is 24
+Factorial of 5 is 120
+
+# Example: Running TestStack program
+$ java TestStack
+Stack in mystack1:
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+Stack in mystack2:
+19
+18
+17
+16
+15
+14
+13
+12
+11
+10
+```
+
 ## 📖 Learning Outcomes
 
 By completing these exercises, students will:
@@ -280,6 +443,19 @@ By completing these exercises, students will:
 - ✅ Work with multiple objects of the same class
 - ✅ Understand garbage collection and finalize method
 - ✅ Create practical classes like BankAccount with business logic
+
+**Lab 5 - Advanced Methods and Classes:**
+- ✅ Implement method overloading for different parameter types
+- ✅ Understand compile-time polymorphism
+- ✅ Implement constructor overloading with multiple initialization options
+- ✅ Create and use copy constructors
+- ✅ Apply access modifiers (public, private, default) for encapsulation
+- ✅ Pass objects as method parameters
+- ✅ Return objects from methods
+- ✅ Understand call by value and object reference behavior
+- ✅ Implement recursive methods for various problems
+- ✅ Create custom data structures (Stack implementation)
+- ✅ Apply proper encapsulation with private members
 
 ## 🤝 Contributing
 
